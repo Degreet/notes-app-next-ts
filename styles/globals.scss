@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+input,
+textarea {
+  padding: 10px 15px;
+  border: 1px solid #bfbfbf;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+textarea {
+  font-family: sans-serif;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background: transparent;
+  border-radius: 3px;
+  font-size: 16px;
+  color: #000;
+  cursor: pointer;
+}
+
+button.btn-success {
+  background: green;
+  color: #fff;
+}
+
+button.btn-danger {
+  background: darkred;
+  color: #fff;
+}
+
+main {
+  max-width: 500px;
+  margin: auto;
+}
+
+.pre {
+  font-size: 20px;
+  font-family: sans-serif;
+}
