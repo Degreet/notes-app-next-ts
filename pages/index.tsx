@@ -29,7 +29,7 @@ const Home: NextPage<Props> = ({ notes }: Props) => {
 }
 
 Home.getInitialProps = async (): Promise<{ notes: Note[] }> => {
-  const res: { data: NotesResponse } = await axios.get('http://localhost:3000/api/notes')
+  const res: { data: NotesResponse } = await axios.get(`${process.env.API_URL}/notes`)
   return { notes: res.data.notes }
 }
 
