@@ -40,7 +40,7 @@ const NotePage: NextPage<Props> = ({ note }: Props) => {
 
 NotePage.getInitialProps = async (ctx: NextPageContext): Promise<{ note: Note }> => {
   const { id } = ctx.query
-  const res: { data: NoteResponse } = await axios.get(`${process.env.API_URL}/api/note/${id}`)
+  const res: { data: NoteResponse } = await axios.get(`${process.env.API_URL}/note/${id}`)
   return { note: res.data.note }
 }
 
